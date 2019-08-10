@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Message from './Message'
 
 const MessagesList = ({ messages }) => (
-    <section className="messages-list">
+    <div className="messages-list">
         <ul>
             {messages.map(message => (
                 <Message
@@ -12,7 +12,7 @@ const MessagesList = ({ messages }) => (
                 />
             ))}
         </ul>
-    </section>
+    </div>
 );
 
 MessagesList.propTypes = {
